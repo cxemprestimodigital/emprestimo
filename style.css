@@ -1,0 +1,16 @@
+.text-font {
+    font-family: 'login', sans-serif !important;
+    font-weight: 300;
+}
+
+element.style {
+}
+.float-label label {
+    display: block;
+    position: absolute;
+    bottom: 38px;
+    left: 0;
+    transition: bottom 200ms;
+    transition-delay: 100ms;
+    pointer-events: none;
+} 
